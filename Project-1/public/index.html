@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Country</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <script src="script.js" defer></script>
+</head>
+
+<body class="">
+    <header class="header">
+        <div class="header-content">
+            <h2 class="title"><a href="/public/index.html">Where in the world?</a></h2>
+            <p class="theme-changer"><i id="themeIcon" class="fa-regular fa-moon"></i>&nbsp;<span class="theme-name">Light</span>&nbsp;Mode</p>
+        </div>
+    </header>
+    <main class="main">
+        <div class="search-filter-container">
+            <label for="search" class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="input" id="search" type="text" placeholder="Search for a country...">
+            </label>
+            <select class="filter-by-region">
+                <option class="option" hidden>Filter by Region</option>
+                <option class="option" value="Africa">Africa</option>
+                <option class="option" value="America">America</option>
+                <option class="option" value="Asia">Asia</option>
+                <option class="option" value="Europe">Europe</option>
+                <option class="option" value="Oceania">Oceania</option>
+            </select>
+        </div>
+
+        <div class="countries-container"></div>
+    </main>
+</body>
+
+</html>
