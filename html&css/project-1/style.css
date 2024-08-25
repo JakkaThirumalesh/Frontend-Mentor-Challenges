@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    border: 1px solid black;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 22px;
+    max-width: 380px;
+    box-shadow: 10px 10px 0 0 black;
+}
+.card>img{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+.button{
+    width: fit-content;
+    padding: 6px 12px;
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: -.5px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
+.publish{
+    font-size: 14px;
+    font-weight: 600;
+}
+.title{
+    font-weight: 900;
+    margin: 20px 0;
+}
+.para{
+    color: hsl(0, 0%, 42%);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.cardFooter{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.cardFooter>img{
+    width: 32px;
+}
+.cardFooter>h5{
+    font-weight: 900;
+    font-size: 14px;
+}
+
+@media (max-width:375px) {
+    .para{
+        font-size: 14px;
+    }
+}
